@@ -1,0 +1,19 @@
+<section class="self_closing">
+	<h2>Self-Closing</h2>
+	<p>pHTML Self-Closing is loading.</p>
+	<div><div class="main"/></div>
+	<template><slot name="title"/></template>
+	<custom-element/>
+	<script>
+	(function (script) {
+		var customElement = script.previousElementSibling;
+		var text = script.parentNode.children[1];
+
+		document.addEventListener('DOMContentLoaded', function () {
+			text.textContent = customElement.nodeName === 'CUSTOM-ELEMENT'
+				? 'pHTML Self-Closing is working.'
+			: 'pHTML Self-Closing is not working.'
+		});
+	})(document.currentScript);
+	</script>
+</section>

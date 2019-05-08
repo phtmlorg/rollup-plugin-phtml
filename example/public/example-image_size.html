@@ -1,0 +1,17 @@
+<section class="image_size">
+	<h2>Image Size</h2>
+	<p>pHTML Image Size is loading.</p>
+	<img src="image-600x400.jpg" />
+	<script>
+	(function (script) {
+		var image = script.previousElementSibling;
+		var text = script.parentNode.children[1];
+
+		document.addEventListener('DOMContentLoaded', function () {
+			text.textContent = image.hasAttribute('intrinsicsize')
+				? 'pHTML Image Size is working.'
+			: 'pHTML Image Size is not working.'
+		});
+	})(document.currentScript);
+	</script>
+</section>

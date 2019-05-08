@@ -1,0 +1,17 @@
+{
+  "name": "rollup-plugin-html-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "build:inject": "rollup -c",
+    "start": "rollup -c --watch",
+    "start:inject": "rollup -c rollup.inject.config.js --watch"
+  },
+  "devDependencies": {
+    "@phtml/image-size": "^4.0.1",
+    "@phtml/include": "^4.1.0",
+    "@phtml/self-closing": "^4.0.0",
+    "rollup": "^1.11.3"
+  },
+  "private": true
+}

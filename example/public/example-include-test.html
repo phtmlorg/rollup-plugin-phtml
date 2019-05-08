@@ -1,0 +1,12 @@
+<script>
+(function (script) {
+	var includeElements = script.parentNode.querySelectorAll('include');
+	var text = script.parentNode.children[1];
+
+	document.addEventListener('DOMContentLoaded', function () {
+		text.textContent = includeElements.length === 0
+			? 'pHTML Include is working.'
+		: 'pHTML Include is not working.'
+	});
+})(document.currentScript);
+</script>
