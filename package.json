@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-phtml",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Use pHTML with Rollup",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -19,32 +19,32 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "phtml": "^4.0.0",
-    "rollup-pluginutils": "^2.6.0"
+    "phtml": "^4.1.0",
+    "rollup-pluginutils": "^2.7.0"
   },
   "peerDependencies": {
-    "phtml": "^4.0.0"
+    "phtml": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "pre-commit": "^1.2.2",
-    "rollup": "^1.11.3"
+    "rollup": "^1.12.1"
   },
   "eslintConfig": {
-    "root": true,
     "env": {
       "browser": true,
       "es6": true,
       "node": true
     },
+    "extends": "eslint:recommended",
     "parser": "babel-eslint",
     "parserOptions": {
       "ecmaVersion": 2018,
       "impliedStrict": true,
       "sourceType": "module"
     },
-    "extends": "eslint:recommended"
+    "root": true
   },
   "keywords": [
     "html",
